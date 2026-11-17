@@ -1,0 +1,117 @@
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #263b32;
+    background-color: #f2f7f3;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #164b3b;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #d5f5df;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #0b3024;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    max-width: 960px;
+    margin: auto;
+    padding: 24px;
+}
+
+/* SEÇÕES */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+/* TÍTULOS */
+h2 {
+    color: #176b4d;
+}
+
+h3 {
+    color: #287b59;
+}
+
+/* PARÁGRAFOS */
+p {
+    line-height: 1.7;
+}
+
+/* LINK */
+a {
+    color: #176b4d;
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #164b3b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CARTÕES DE APRESENTAÇÃO */
+
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #eaf5ed;
+    padding: 22px;
+    border-radius: 15px;
+    border-left: 5px solid #176b4d;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #176b4d;
+    margin-top: 0;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .servicos {
+        grid-template-columns: 1fr;
+    }
+}
+header h1 {
+    font-size: 42px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header h1 span {
+    color: #8bea50;
+}
+
+header p {
+    color: #e5ffe9;
+    font-size: 18px;
+}

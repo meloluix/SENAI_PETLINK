@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pet Link SC</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+    
+        <h1>🐾 PET LINK SC</h1>
+        <p>Conectando vc , tecnologia e cuidado com seu pet!</p>
+    </header>
+
+    <main>
+
+        <section id="sobre">
+            <h2>Bem-vindo à Pet Link SC!</h2>
+
+            <p>
+                Somos uma empresa  com tecnologia voltada
+                para a saúde, segurança e bem-estar de cães e gatos.
+            </p>
+        </section>
+
+        
+<section id="tecnologias">
+    <h2>Nossas tecnologias</h2>
+
+    <div class="servicos">
+
+        <div class="card">
+            <h3>🐕 Coleira inteligente</h3>
+            <p>Monitora informações da saúde e atividades dos pets.</p>
+        </div>
+
+        <div class="card">
+            <h3>🍽️ Comedouro inteligente</h3>
+            <p>Acompanha a alimentação e ajuda a controlar a comida.</p>
+        </div>
+
+        <div class="card">
+            <h3>📍 Mapa de localização</h3>
+            <p>Ajuda o tutor a acompanhar a localização do animal.</p>
+        </div>
+
+        <div class="card">
+            <h3>🐾 Contador de passos</h3>
+            <p>Registra a atividade física diária do pet.</p>
+        </div>
+
+        <div class="card">
+            <h3>📸 Galeria de pets</h3>
+            <p>Espaço para compartilhar fotos dos animais.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔔 Alerta de alimentação</h3>
+            <p>Avisa quando a quantidade de comida estiver baixa.</p>
+        </div>
+
+    </div>
+</section
+
+        <section id="proposta">
+            <h2>Nossa proposta</h2>
+
+            <p>
+                A Pet Link SC busca unir tecnologia e cuidado
+                para proporcionar mais tranquilidade aos tutores
+                e qualidade de vida aos animais.
+            </p>
+
+<section id="quiz">
+    <h2>🐾 Qual plano combina com seu pet?</h2>
+
+    <p>Responda às perguntas e descubra qual plano combina com seu companheiro!</p>
+
+    <label for="animal">Qual é o seu pet?</label>
+    <select id="animal">
+        <option value="Cachorro">Cachorro</option>
+        <option value="Gato">Gato</option>
+    </select>
+
+    <label for="atividade">Como é a atividade do seu pet?</label>
+    <select id="atividade">
+        <option value="Baixa">Mais tranquilo</option>
+        <option value="Alta">Muito ativo</option>
+    </select>
+
+    <button onclick="mostrarPlano()">Descobrir meu plano</button>
+
+    <p id="resultado"></p>
+</section>
+
+        </section>
+
+<footer id="contato">
+    <p>Instagram: @pet.link_sc</p>
+    <p>Pet Link SC - Tecnologia e carinho!</p>
+</footer>
+ 
+<script>
+function mostrarPlano() {
+    const animal = document.getElementById("animal").value;
+    const atividade = document.getElementById("atividade").value;
+
+    let plano = "";
+
+    if (atividade === "Alta") {
+        plano = "Plano Ativo: acompanhamento de atividades e localização.";
+    } else {
+        plano = "Plano Cuidado: acompanhamento da alimentação e bem-estar.";
+    }
+
+    document.getElementById("resultado").innerHTML =
+        "Seu pet é: " + animal + "<br>" + plano;
+}
+</script>
+
+</body>
+</html>
